@@ -1,0 +1,72 @@
+/* Header */
+/*
+.header{
+    display: flex;
+    background-color: rgb(19, 12, 12);
+   
+    margin-top: 2px;
+    position: sticky;
+    z-index: 10;
+   
+ }
+ .header img{
+     height: 30px;
+     margin: 5px;
+     margin-bottom: -2px;
+     object-fit:cover;  
+ }
+ .search_bar
+ {
+     display: flex;
+     max-height: 28px;
+     flex: 100;
+ }
+  .search
+  {  
+      margin-left: 15px;
+      margin-top: 5px;
+      margin-bottom: -2px;
+      width: 100%;
+      border: 2px solid ;
+  }
+  .options
+  {
+      color: white;
+      margin-right: 8px;
+      margin-left: 8px;
+     
+      line-height: 13px;
+      font-size: 10px;
+      text-align: center;
+      
+  }
+  .options > span{
+     font-weight: bolder;
+   
+  }
+  .searchIcon
+  { 
+      background-color: yellow;
+      margin-top: 7px;
+      margin-bottom: -2px;
+      max-height: 21px;
+  }
+  .basket
+  {
+      margin-top: 4px;
+  }
+  .new-made{
+      display: flex;
+      flex: 100;
+  }
+  @media screen and (max-width: 700px) {
+      .options p{
+          display: none;
+      }
+      
+  } 
+  */
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}

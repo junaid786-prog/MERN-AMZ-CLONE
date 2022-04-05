@@ -1,0 +1,75 @@
+.category_section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    z-index: 20;
+    justify-content: center;
+    background-color: rgb(228, 227, 228);
+}
+
+.names{
+    font-size: large;
+    letter-spacing: 0.8px;
+    margin: 2px 0px;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.category{
+    background-color: white;
+    margin: 8px;
+    padding: 10px;
+    z-index: 100;
+   
+}
+.category_img img{
+    margin: 5px 0px;
+    padding: 5px 5px;
+    width: 280px;
+    height: 270px;
+}
+.category_button{
+    margin: 10px 0px;
+    padding: 5px 5px;
+}
+.category_button a{
+    text-decoration: none;
+    color: blue;
+    font-size: small;
+    cursor: pointer;
+   
+}
+.category_button a:hover{
+    text-decoration: underline;
+    color: rgb(190, 206, 43);  
+}
+
+/* to sellers list css */
+.top_sellers_section{
+    background-color: white;
+    margin: 10px 27px;
+    padding: 0px 10px;
+}
+.seller_content{
+    display: flex;
+}
+.seller_heading{
+    margin:6px 10px 5px 5px;
+}
+.top_sellers{
+    display: flex;
+    overflow-x: scroll;
+   
+}
+.seller_images{
+    padding: 0px 10px;
+    margin: 0px 5px;
+}
+.seller_btn {
+    margin: 4px 0px;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: blue;
+    font-size: small;
+}

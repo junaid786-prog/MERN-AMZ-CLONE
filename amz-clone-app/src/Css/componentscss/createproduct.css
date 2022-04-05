@@ -1,0 +1,49 @@
+.create_product_page {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+.create_product_page h4 {
+  padding: 10px 0px;
+}
+.product_info {
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  padding: 20px;
+  text-align: left;
+  background-color: white;
+  box-shadow: 0px 0px 10px wheat;
+}
+.product_info input {
+  background-color: white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.product_info p {
+  padding: 2px;
+}
+
+button:hover {
+  background-color: #ffa41c;
+  box-shadow: 1px 1px 10px #ffa41c;
+}
+
+.signup_button {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
+.register_btn {
+  border-radius: 0px;
+  border: 1px solid rgb(173, 177, 184);
+  background-color: rgb(243, 206, 114);
+  text-decoration: none;
+  width: 100%;
+}

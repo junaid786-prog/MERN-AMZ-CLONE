@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  background-color: rgb(19, 12, 12);
+  margin-top: 2px;
+  position: sticky;
+  z-index: 10;
+}
+.header img {
+  height: 30px;
+  margin: 5px;
+  margin-bottom: -2px;
+  object-fit: cover;
+}
+.search_bar {
+  display: flex;
+  max-height: 28px;
+  flex: 100;
+}
+.search {
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: -2px;
+  width: 100%;
+  border: 2px solid;
+}
+.option_section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.options {
+  color: white;
+  margin-right: 8px;
+  margin-left: 8px;
+  font-size: 10px;
+}
+
+.profileicon {
+  cursor: pointer;
+  color: white;
+}
+
+.options p {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sign_in_link {
+  color: white;
+  /* text-decoration: none; */
+}
+.MuiAvatar-img {
+  height: 100%;
+}
+.avtar_profile {
+  /* margin: 0px;
+  padding: 0px;
+  height: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options > span {
+  font-weight: bolder;
+}
+.searchIcon {
+  background-color: yellow;
+  margin-top: 7px;
+  margin-bottom: -2px;
+  max-height: 21px;
+}
+.basket {
+  margin-top: 4px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: smaller;
+  padding: 0px 4px;
+}
+.new-made {
+  display: flex;
+  flex: 100;
+}
+@media screen and (max-width: 600px) {
+  .options {
+    display: none;
+  }
+  .profile {
+    display: inline;
+  }
+}

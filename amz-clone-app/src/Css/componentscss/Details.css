@@ -1,0 +1,280 @@
+/* .checkoutPage {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: white;
+} */
+/* .checkoutSections {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  justify-content: space-between;
+} */
+.productdetails {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10vmax;
+  box-sizing: border-box;
+}
+.carouselImage {
+  width: 50vw;
+}
+.checkoutLeft h2 {
+  margin: 15px;
+}
+.checkoutLeft img {
+  min-width: 100%;
+  height: 15vh;
+}
+.product {
+  display: flex;
+  margin: 30px 10px;
+}
+
+.imagePart img {
+  width: 50vw;
+  border-radius: 5px;
+  box-shadow: 3px 4px 10px white;
+}
+.removebtn {
+  margin-top: 10px;
+  background-color: yellow;
+  border: 1px solid rgb(107, 107, 95);
+}
+.payment {
+  display: flex;
+}
+.payment input {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+.payment p {
+  font-size: 13px;
+  margin: 5px;
+  align-content: center;
+  font-weight: bold;
+}
+.checkoutRight {
+  margin: 20px;
+  padding: 5px;
+}
+.right_section {
+  justify-content: center;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  border: 1.9px solid rgb(213, 217, 217);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.right_section span {
+  font-weight: 600;
+}
+.qty {
+  margin: 10px 0px;
+  display: flex;
+  height: 35px;
+  align-items: center;
+}
+.qty_btn {
+  font-weight: 900;
+}
+#qty_btns {
+  background-color: rgb(240, 242, 242);
+  padding: 2px 5px;
+  border: 0.5px solid rgb(213, 217, 217);
+  cursor: pointer;
+}
+.right_section a {
+  text-decoration: none;
+  color: rgb(0, 113, 165);
+  cursor: pointer;
+}
+.right_section a:hover {
+  color: rgb(235, 181, 103);
+}
+
+.reviews_section {
+  width: 100%;
+}
+.reviews_heading {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+.reviews_heading h3 {
+  text-align: center;
+  width: 160px;
+  border-bottom: 2px solid black;
+}
+.reviews {
+  width: 100%;
+  display: flex;
+  flex: none;
+  overflow: auto;
+  margin-top: 10px;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.review {
+  border: 0.5px solid rgb(63, 62, 62);
+  box-shadow: 0px 0px 4px rgb(133, 126, 126);
+  margin: 0px 5px;
+  padding: 5px 8px;
+  width: 30vw;
+}
+.review p {
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+}
+.reviewer_image {
+  display: flex;
+  justify-content: center;
+}
+.reviewer_image img {
+  width: 20vw;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .checkoutLeft {
+    max-width: 100%;
+  }
+  .product {
+    width: 90vw;
+    flex-direction: column;
+    margin: 15px 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkoutRight {
+    padding-right: 5px;
+  }
+  .imagePart img {
+    width: 100%;
+    height: auto;
+  }
+  .right_section {
+    margin-top: 10px;
+    width: 70vw;
+  }
+  .review {
+    width: 100%;
+  }
+}
+
+.details_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.details_button button {
+  background-color: #f7ca00;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.details_button button:hover {
+  background-color: #ffa41c;
+  box-shadow: 1px 1px 10px #ffa41c;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+/*
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  console.log(id);
+  const [qty, setQty] = useState(1);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProductDetails(id));
+    console.log("d");
+  }, [id]);
+
+  const { product } = useSelector((state) => state.product_detail);
+  console.log(product);
+  return (
+    <>
+      <div>
+        <div className="checkoutPage">
+          <div className="checkoutSections">
+            <div className="checkoutLeft">
+              <h2>your Checkout Basket</h2>
+              <hr />
+              <div className="product">
+                <div className="imagePart">
+                  {<img src={product.images[0].url}></img>}
+                </div>
+                <div className="infoPart">
+                  <h3>{product.name}</h3>
+                  <h3>{product.price}$</h3>
+                  <h3>⭐⭐⭐⭐</h3>
+                  <Link to="/cart">
+                    <button>Add To Cart</button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="checkoutRight">
+              <div className="right_section">
+                <p>
+                  Arrives: <span>Dec 20 - 25</span>
+                </p>
+                <a href="">Delivers to pakistan</a>
+                <div className="qty">
+                  <button className="qty_btn">Quantity</button>
+                  <span
+                    id="qty_btns"
+                    onClick={() => {
+                      setQty(qty + 1);
+                    }}
+                  >
+                    +
+                  </span>
+                  <span id="qty_btns">{qty}</span>
+                  <span
+                    id="qty_btns"
+                    onClick={() => {
+                      qty > 1 ? setQty(qty - 1) : setQty(1);
+                    }}
+                  >
+                    -
+                  </span>
+                </div>
+
+                <h4>
+                  Total Price:
+                  <span>{qty * product.price}$</span>
+                </h4>
+                <Link to="/cart">
+                  <button>Add To Cart</button>
+                </Link>
+                <p>Secure Transaction</p>
+                <p>
+                  Return policy: <a>Returnable untill jan 31, 2022</a>
+                </p>
+                <p>
+                  Support: <a>Free Amazon Product Support Included</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default ProductDetails;
+*/

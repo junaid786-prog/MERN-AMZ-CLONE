@@ -1,0 +1,36 @@
+.homepic > img {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: -100px;
+  z-index: -10;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media screen and (max-width: 600px) {
+  .homepic > img {
+    margin-bottom: -20px;
+  }
+}
+
+.see_more_products {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button_link {
+  text-align: center;
+  flex: 0.5;
+  padding: 4px 10px;
+  background-color: #f7ca00;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+.button_link:hover {
+  background-color: #ffa41c;
+  box-shadow: 1px 1px 10px #ffa41c;
+}

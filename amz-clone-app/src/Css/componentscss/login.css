@@ -1,0 +1,93 @@
+.login_page {
+  /* width: 100vw; */
+  margin-top: 10px;
+}
+.login_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.amz_logo {
+  display: flex;
+  justify-content: center;
+}
+.amz_logo img {
+  width: 170px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.info_section {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid beige;
+  padding: 20px;
+}
+.info_section h4 {
+  text-align: center;
+  margin: 15px 0px;
+}
+.info_section b,
+input {
+  margin: 10px 0px;
+}
+input {
+  padding: 3px 5px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 3px;
+  outline: none;
+}
+.login_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.login_button button {
+  border-radius: 0px;
+  border: 1px solid rgb(173, 177, 184);
+  width: 100%;
+  background-color: rgb(243, 206, 114);
+}
+.signup_button {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+}
+.register_btn {
+  border-radius: 0px;
+  border: 1px solid rgb(173, 177, 184);
+  background-color: rgb(244, 245, 247);
+  text-decoration: none;
+  width: 100%;
+}
+.info button:hover {
+  background-color: rgb(238, 197, 93);
+  box-shadow: 0px 0px 0px;
+}
+
+.details_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+button {
+  background-color: #f7ca00;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+button:hover {
+  background-color: #ffa41c;
+  box-shadow: 1px 1px 10px #ffa41c;
+}
