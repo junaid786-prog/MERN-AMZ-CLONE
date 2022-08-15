@@ -4,7 +4,7 @@ Amazon clone using MERN STACK
 # In Backend Folder open terminal and to initialize run
     npm init
 # install packages using
-    npm i package_name
+    npm i
 # create react app using 
     npx create-react-app
 # install packages using
